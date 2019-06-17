@@ -89,5 +89,25 @@ namespace Assignment_2._1
             }
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Calculate the total resistance of a 5 series circuit
+            try
+            {
+                double R1, R2, R3, R4, R5, RT;
+                R1 = Convert.ToDouble(textBox10.Text);
+                R2 = Convert.ToDouble(textBox11.Text);
+                R3 = Convert.ToDouble(textBox12.Text);
+                R4 = Convert.ToDouble(textBox13.Text);
+                R5 = Convert.ToDouble(textBox14.Text);
+                RT = R1 + R2 + R3 + R4 + R5;
+                Answer4.Text = "total resistance = " + RT;
+            }
+            catch
+            {
+                MessageBox.Show("Type in five numbers.");
+            }
+        }
     }
 }

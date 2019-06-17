@@ -68,11 +68,11 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.Answer1 = new System.Windows.Forms.Label();
             this.Answer2 = new System.Windows.Forms.Label();
             this.Answer3 = new System.Windows.Forms.Label();
             this.Answer4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -153,8 +153,8 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.Answer4);
             this.tabPage4.Controls.Add(this.button4);
+            this.tabPage4.Controls.Add(this.Answer4);
             this.tabPage4.Controls.Add(this.textBox14);
             this.tabPage4.Controls.Add(this.textBox13);
             this.tabPage4.Controls.Add(this.textBox12);
@@ -464,15 +464,6 @@
             this.textBox14.Size = new System.Drawing.Size(100, 20);
             this.textBox14.TabIndex = 9;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(134, 189);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Calculate";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // Answer1
             // 
             this.Answer1.AutoSize = true;
@@ -509,6 +500,16 @@
             this.Answer4.Size = new System.Drawing.Size(87, 13);
             this.Answer4.TabIndex = 11;
             this.Answer4.Text = "Total Resistance";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(134, 183);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Calculate";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
@@ -572,11 +573,11 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label Answer1;
         private System.Windows.Forms.Label Answer2;
         private System.Windows.Forms.Label Answer3;
         private System.Windows.Forms.Label Answer4;
+        private System.Windows.Forms.Button button4;
     }
 }
 
