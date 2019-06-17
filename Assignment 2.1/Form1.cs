@@ -41,7 +41,9 @@ namespace Assignment_2._1
                 R1 = Convert.ToDouble(textBox1.Text);
                 R2 = Convert.ToDouble(textBox2.Text);
                 RT = R1 + R2;
-                Answer1.Text = "total resistance = " + RT;
+                Answer1.Text = "series total resistance = " + RT;
+                RT = 1 / (1 / R1 + 1 / R2);
+                Answer5.Text = "parallel total resistance = " + RT;
             }
             catch
             {
@@ -60,7 +62,9 @@ namespace Assignment_2._1
                 R2 = Convert.ToDouble(textBox4.Text);
                 R3 = Convert.ToDouble(textBox5.Text);
                 RT = R1 + R2 + R3;
-                Answer2.Text = "total resistance = " + RT;
+                Answer2.Text = "series total resistance = " + RT;
+                RT = 1 / (1 / R1 + 1 / R2 + 1 / R3);
+                Answer6.Text = "parallel total resistance = " + RT;
             }
             catch
             {
@@ -81,7 +85,9 @@ namespace Assignment_2._1
                 R3 = Convert.ToDouble(textBox8.Text);
                 R4 = Convert.ToDouble(textBox9.Text);
                 RT = R1 + R2 + R3 + R4;
-                Answer3.Text = "total resistance = " + RT;
+                Answer3.Text = "series total resistance = " + RT;
+                RT = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4);
+                Answer7.Text = "parallel total resistance = " + RT;
             }
             catch
             {
@@ -102,12 +108,15 @@ namespace Assignment_2._1
                 R4 = Convert.ToDouble(textBox13.Text);
                 R5 = Convert.ToDouble(textBox14.Text);
                 RT = R1 + R2 + R3 + R4 + R5;
-                Answer4.Text = "total resistance = " + RT;
+                Answer4.Text = "series total resistance = " + RT;
+                RT = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4 + 1 / R5);
+                Answer8.Text = "parallel total resistance = " + RT;
             }
             catch
             {
                 MessageBox.Show("Type in five numbers.");
             }
         }
+
     }
 }
