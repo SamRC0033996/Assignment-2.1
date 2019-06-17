@@ -114,7 +114,7 @@ namespace Assignment_2._1
             }
             catch
             {
-                MessageBox.Show("Type in five numbers.");
+                MessageBox.Show("Type in five numbers."); 
             }
         }
 
